@@ -16,12 +16,13 @@ const scontoOver65 = 0.40;
 if (etaPasseggero < 18) {
     prezzoTotale =  (prezzoTotale * scontoMinorenni) / 100;
 }
- else (etaPasseggero > 65) {
+if (etaPasseggero > 65) {
     //calcolo sconto over 65
     prezzoTotale = (prezzoTotale * scontoOver65) / 100;
-//prezzo per età compresa tra 18 e 65 anni
-} 
 
-else if (etaPasseggero >= 18 && etaPasseggero <= 65) {
+} 
+//prezzo per età compresa tra 18 e 65 anni
+else (etaPasseggero >= 18 && etaPasseggero <= 65) 
+{
     prezzoTotale = prezzoTotale;
 }
